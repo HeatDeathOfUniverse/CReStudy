@@ -2,6 +2,7 @@
 // Created by NegentropyHost on 2024/1/11.
 //
 
+#include <locale.h>
 #include "stdio.h"
 
 int main(){
@@ -41,5 +42,8 @@ int main(){
   char *string = "中";
   printf( "中 ：%d\12", zhong);
   printf( "中 ：%d\12", zhong_hex);
+
+  setlocale(LC_ALL,"chs");
+  wprintf(L"中:%lc",zhong);
   return 0;
 }
