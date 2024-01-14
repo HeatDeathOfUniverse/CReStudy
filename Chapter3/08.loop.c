@@ -23,9 +23,9 @@ int main(){
   int right;
   char operator;
 
-  char command = 'y';
+  char command;
 
-  while(command != 'q'){
+  do{
 
     printf("Please input expression:\n");
     scanf("%d %c %d", &left, &operator, &right);
@@ -53,6 +53,6 @@ int main(){
     printf("Again? Type 'q' for quit:\n");
     getchar();// 用于获取输入表达式时最后确认的换行（回车）
     command = getchar();
-  }
+  }while(command != 'q');
   return 0;
 }
