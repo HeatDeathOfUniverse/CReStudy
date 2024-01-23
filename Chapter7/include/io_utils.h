@@ -9,7 +9,7 @@
 
 void PrintBinary(unsigned int value);
 
-//#define PRINT_METADATA
+#define PRINT_METADATA
 #ifdef PRINT_METADATA
 # define PRINTLNF(format, ...) printf("("__FILE__":%d) %s: "format"\n", __LINE__, __FUNCTION__ , ##__VA_ARGS__)
 #else
